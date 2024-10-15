@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CRUD OPERATION</h1>
+    </div>
+    <div class="container">
+        <div class="form-section">
+            <h2>Product Entry Form</h2>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+                <div class="input-group">
+                    <label for="productCode">Product Code</label>
+                    <input type="text" name="productCode" id="productCode">
+                </div>
+                <div class="input-group">
+                    <label for="product">Product Name</label>
+                    <input type="text" name="product" id="product">
+                </div>
+                <div class="input-group">
+                    <label for="qty">Quantity</label>
+                    <input type="number" name="qty" id="qty">
+                </div>
+                <div class="input-group">
+                    <label for="perPrice">Price</label>
+                    <input type="number" name="perPrice" id="perPrice">
+                </div>
+
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <h2>Product List</h2>
+            <table class="list" id="storeList">
+                <thead>
+                    <tr>
+                        <th>Product Code</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic Content -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <footer>
+        <p> Corizo CRUD Operation - Minor Project</p>
+    </footer>
+</body>
+</html>
